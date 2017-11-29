@@ -1,0 +1,37 @@
+@import 'normalize'; 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80vh;
+        margin: 10vh auto;
+        .head {
+            text-transform: uppercase;
+            user-select: none;
+            cursor: default;
+            font-weight: bold; 
+            color: #4551ba;
+            font-size: 35px;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 85%;
+            > * {
+              margin: 10px 5px;  
+            }
+            > div {
+                width: 70%;
+            }
+
+        }
+        ul {
+            width: 100%;
+        }
+    }
+}

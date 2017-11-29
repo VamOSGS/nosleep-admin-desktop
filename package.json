@@ -1,0 +1,42 @@
+{
+  "name": "nosleep-admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "el": "electron ./back/main.js",
+    "package-win": "electron-packager ./back/main.js nosleep-heroku-admin --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"NosleepHeroku Admin\"", 
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --color --open",
+    "build": "node node_modules/webpack/bin/webpack.js  --config webpack.prod.config.js"
+  },
+  "dependencies": {
+    "electron": "^1.7.9",
+    "material-ui": "next",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "react-hot-loader": "^3.1.1",
+    "redux-devtools-extension": "^2.13.2",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
